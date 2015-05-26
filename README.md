@@ -11,9 +11,8 @@ below to pull and prepare the system.
 ```
 % git clone https://github.com/synedra/docker-demo.git
 % cd docker-demo/webapp
-% // Install pip if you don't have it already: https://pip.pypa.io/en/stable/installing.html
-% sudo pip install --user -r requirements.txt 
-% python app.py
+% npm install
+% node toppings.js
 ```
 Browse to localhost:3000
 
