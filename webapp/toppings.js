@@ -65,4 +65,4 @@ app.delete('/api/v1.0/toppings/:id', function(req, res) {
   res.json(true);
 });
 
-app.listen(process.env.PORT || 3412);
+app.listen(process.env.PORT || 3000);

@@ -4,26 +4,14 @@ Docker Demo Repository
 Demonstration repository for use when learning how to set up
 docker containers for workshops.
 
-To use, first install the code using git.  Follow the instructions
-below to pull and prepare the system.
-
-## Run the system locally
-```
-% git clone https://github.com/synedra/docker-demo.git
-% cd docker-demo/webapp
-% npm install
-% node toppings.js
-```
-Browse to localhost:3000
-
 ## Create your own github repository
 Browse to http://www.github.com/synedra/docker-demo.git
 
-Fork this repository as your own username
+On github, Fork this repository to your own username
 
 Copy the URL for your repository
 
-## In the docker-demo directory do:
+## In the docker-demo directory in your local clone do:
 ```
 % git init
 % git remote add origin <YOUR REPOSITORY URL>
@@ -31,21 +19,20 @@ Copy the URL for your repository
 % git push origin master
 ```
 
-## Create a docker container:
-```
-% cp Dockerfile-demo Dockerfile
-% vi Dockerfile
-```
-
-Browse to hub.docker.com
+In a browser, browse to hub.docker.com
 Sign in with Github
 "Add Repository" - Automated Build
+Select the repository that you just created
 
-
-
-To set the system up using Docker:
+To set the system up on Windows or Macintosh using Docker:
 - install boot2docker
-- 
+- boot2docker init
+- boot2docker start
+- boot2docker init <returns boot2docker IP>
+// Set environment variables as directed
+- docker run -i -t -p 80:3000 <username>/docker-demo /bin/bash
+# node toppings.js
+Browse to <boot2docker IP> 
 
 ## License
 
