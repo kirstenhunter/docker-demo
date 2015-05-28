@@ -19,10 +19,11 @@ Copy the URL for your repository
 % git push origin master
 ```
 
-In a browser, browse to hub.docker.com
+In a browser, browse to http://hub.docker.com
 Sign in with Github
 "Add Repository" - Automated Build
 Select the repository that you just created
+The build will start - it will show up as "pending", it could finish in a few minutes or several hours
 
 To set the system up on Windows or Macintosh using Docker:
 - install boot2docker
@@ -33,6 +34,8 @@ To set the system up on Windows or Macintosh using Docker:
 - docker run -i -t -p 80:3000 <username>/docker-demo /bin/bash
 # node toppings.js
 Browse to <boot2docker IP> 
+
+There, you've created your own docker container.  All you need is the Dockerfile to tell the system how to build, and any changes you make to the git respository will kick off a new build in docker.
 
 ## License
 
